@@ -45,3 +45,22 @@ select.js-sort-by-private.form-select option::checkmark{display:none}
 
 /* Respiro entre a lista de produtos e o rodapé */
 main#MainContent section.section-main-products-grid{padding-bottom:96px!important}
+
+/* Menu hambúrguer (celular) */
+@media (max-width:767px){
+.modal-nav-hamburger .modal-body .nav-list{padding:8px 0}
+.modal-nav-hamburger .nav-list .nav-item{border-bottom:1px solid rgba(59,42,34,.12)}
+.modal-nav-hamburger .nav-list-link{display:flex;align-items:center;justify-content:space-between;width:100%;padding:18px 20px!important;font-size:16px!important;font-weight:500;letter-spacing:.06em;color:#3B2A22;background:transparent;transition:background-color .2s,color .2s}
+.modal-nav-hamburger button.nav-list-link,.modal-nav-hamburger .modal-title{font-family:inherit!important;text-align:left}
+.modal-nav-hamburger .nav-list-link:hover,.modal-nav-hamburger .nav-list-link:active{background:rgba(82,102,91,.10);color:#934522!important}
+.modal-nav-hamburger .nav-list-link.selected{color:#934522;background:rgba(147,69,34,.07);box-shadow:inset 4px 0 0 #934522}
+.modal-nav-hamburger .nav-list-arrow,.modal-nav-hamburger .nav-list-arrow svg{color:#934522;fill:#934522}
+.modal-nav-hamburger .modal-title{font-size:15px;font-weight:600;letter-spacing:.06em;color:#3B2A22}
+.modal-nav-hamburger .modal-header{background:#F1E3D3;border-bottom:1px solid rgba(59,42,34,.10)}
+.modal-nav-hamburger .modal-footer{padding:16px 20px 22px;background:#fff;border-top:1px solid rgba(59,42,34,.12)}
+.modal-nav-hamburger .nav-panel-account-row,.modal-nav-hamburger .nav-panel-account{display:block;width:100%}
+.modal-nav-hamburger .nav-panel-account-links{display:flex;align-items:center;gap:10px;width:100%;font-size:0}
+.modal-nav-hamburger .nav-panel-account-links svg{flex:none;width:22px;height:22px;color:#934522;fill:#934522}
+.modal-nav-hamburger .nav-panel-account-links a.nav-panel-link{display:inline-flex!important;align-items:center;padding:0!important;font-size:15px!important;color:#3B2A22}
+.modal-nav-hamburger .nav-panel-account-links a.nav-panel-link:last-child{margin-left:auto;min-height:40px!important;padding:0 22px!important;border:1px solid #934522;border-radius:999px;color:#934522;font-weight:500}
+}
