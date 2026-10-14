@@ -42,3 +42,6 @@ select.js-sort-by-private.form-select option::checkmark{display:none}
 .filters-desktop-heading{padding-bottom:14px;margin-bottom:6px;border-bottom:1px solid rgba(59,42,34,.12)}
 .filters-desktop-content{margin-bottom:-14px}
 }
+
+/* Respiro entre a lista de produtos e o rodapé */
+main#MainContent section.section-main-products-grid{padding-bottom:96px!important}
