@@ -23,3 +23,15 @@ main#MainContent .account-orders-section{padding:24px 0 96px!important}
 .account-orders-sidebar{padding:22px 20px}
 .account-orders-empty{min-height:200px;padding:32px 20px}
 }
+
+/* "Ordenar por" (categorias): lista customizada no Chrome/Edge recentes; outros navegadores mantêm o menu nativo */
+@supports (appearance:base-select){
+select.js-sort-by-private.form-select,select.js-sort-by-private.form-select::picker(select){appearance:base-select!important}
+select.js-sort-by-private.form-select::picker-icon{display:none}
+select.js-sort-by-private.form-select::picker(select){margin-top:6px;padding:6px;background:#fff;border:1px solid rgba(59,42,34,.12);border-radius:14px;box-shadow:0 16px 32px -16px rgba(59,42,34,.35);min-width:anchor-size(width)}
+select.js-sort-by-private.form-select{width:200px}
+select.js-sort-by-private.form-select option{padding:10px 14px;border-radius:8px;font-size:14px;color:#3B2A22;background:transparent;transition:background-color .2s,color .2s}
+select.js-sort-by-private.form-select option:hover,select.js-sort-by-private.form-select option:focus{background:rgba(82,102,91,.10);color:#934522}
+select.js-sort-by-private.form-select option:checked{background:rgba(147,69,34,.10);color:#934522;font-weight:600}
+select.js-sort-by-private.form-select option::checkmark{display:none}
+}
