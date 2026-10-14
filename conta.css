@@ -64,3 +64,5 @@ main#MainContent section.section-main-products-grid{padding-bottom:96px!importan
 .modal-nav-hamburger .nav-panel-account-links a.nav-panel-link{display:inline-flex!important;align-items:center;padding:0!important;font-size:15px!important;color:#3B2A22}
 .modal-nav-hamburger .nav-panel-account-links a.nav-panel-link:last-child{margin-left:auto;min-height:40px!important;padding:0 22px!important;border:1px solid #934522;border-radius:999px;color:#934522;font-weight:500}
 }
+
+.section-image-with-text .media-visual img{border-radius:30px}
