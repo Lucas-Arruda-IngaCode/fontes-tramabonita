@@ -97,11 +97,6 @@ main#MainContent section.section-main-products-grid{padding-bottom:96px!importan
 /* Gaveta do carrinho: selo de desconto (o tema deixava o texto branco sem fundo) */
 .cart-item-discount-badge{display:inline-block;margin-right:6px;padding:2px 8px;border-radius:999px;background:#934522;color:#fff;font-size:12px;font-weight:600;line-height:1.4;vertical-align:middle}
 
-/* Página 404 no celular: o tema repõe o texto do botão e do título que o bloco da seção zera */
-#ns-section-main_404 .error-page-title{font-size:0!important}
-#ns-section-main_404 .breadcrumbs,#ns-section-main_404 .breadcrumbs a{font-size:0!important}
-#ns-section-main_404 .breadcrumbs a::after{font-size:15px!important}
-
 /* Busca sem resultado: esconde a frase de sugestões (o tema não lista produtos) e reduz o vazio */
 .products-grid-search-suggestion{font-size:17px;text-align:center;margin:0}
 .products-grid-search-suggestion+p{display:none}
