@@ -86,3 +86,10 @@ main#MainContent section.section-main-products-grid{padding-bottom:96px!importan
 .notification-cart-container .notification-cart-image-container{width:76px;height:76px}
 }
 @media (prefers-reduced-motion:reduce){.notification-cart-container{transition:none}}
+
+/* Promoção na página do produto: etiqueta de desconto e "Economize" (o tema deixava o texto branco sem fundo) */
+.product-price-row{display:flex;align-items:center;flex-wrap:wrap;gap:10px}
+.product-offer-label{display:inline-flex;align-items:center;padding:4px 12px;border-radius:999px;background:#934522;color:#fff;font-size:13px;font-weight:600;letter-spacing:.04em;line-height:1.4}
+.product-offer-label span{color:inherit}
+.saved-amount-container,.saved-amount-text,.saved-amount-text span{color:#3f5a4a}
+.saved-amount-container{display:inline-block;margin-top:4px;font-size:14px;font-weight:600}
