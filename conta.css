@@ -66,3 +66,23 @@ main#MainContent section.section-main-products-grid{padding-bottom:96px!importan
 }
 
 .section-image-with-text .media-visual img{border-radius:30px}
+
+/* Aviso "Adicionado ao carrinho" (canto superior direito) */
+.notification-cart-container{width:380px;max-width:calc(100vw - 24px)}
+.notification-cart-container .notification{position:relative;padding:18px 20px 18px 18px;background:#fff;border:1px solid rgba(59,42,34,.12);border-top:4px solid #934522;border-radius:16px;box-shadow:0 22px 44px -22px rgba(59,42,34,.45),0 4px 12px -6px rgba(59,42,34,.2);overflow:hidden}
+.notification-cart-container .notification-cart-item{display:flex!important;align-items:center;gap:16px}
+.notification-cart-container .notification-cart-image-container{flex:none;width:88px;height:88px;margin:0!important;border-radius:12px;overflow:hidden;background:#F8EBDD;border:1px solid rgba(59,42,34,.08)}
+.notification-cart-container .notification-info-container{flex:1;min-width:0;display:flex;flex-direction:column;gap:4px;padding-right:22px}
+.notification-cart-container .notification-info-line:first-child{font-family:"Roilega",Georgia,serif;font-size:17px;line-height:1.25;color:#3B2A22;overflow-wrap:anywhere}
+.notification-cart-container .notification-info-line:nth-child(2){font-size:13px;color:#6b5a50}
+.notification-cart-container .notification-info-line:nth-child(2) .js-cart-notification-item-price-private{font-weight:600;color:#934522}
+.notification-cart-container .notification-cart-success{display:flex;align-items:center;gap:6px;margin-top:6px;font-size:13px;font-weight:600;color:#3f5a4a}
+.notification-cart-container .notification-cart-success::before{content:"";flex:none;width:18px;height:18px;border-radius:50%;background:#52665B url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23fff' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 12.5l4 4 8-9'/%3E%3C/svg%3E") center/12px no-repeat}
+.notification-cart-container .notification-close{top:4px;right:4px;display:flex;align-items:center;justify-content:center;width:44px;height:44px;padding:0;border-radius:50%;color:#934522;cursor:pointer;transition:background-color .2s}
+.notification-cart-container .notification-close:hover,.notification-cart-container .notification-close:focus-visible{background:rgba(147,69,34,.10);outline:0}
+.notification-cart-container .notification-close svg{width:14px;height:14px;fill:currentColor}
+@media (max-width:767px){
+.notification-cart-container{left:12px!important;right:12px!important;width:auto;max-width:none}
+.notification-cart-container .notification-cart-image-container{width:76px;height:76px}
+}
+@media (prefers-reduced-motion:reduce){.notification-cart-container{transition:none}}
