@@ -93,3 +93,24 @@ main#MainContent section.section-main-products-grid{padding-bottom:96px!importan
 .product-offer-label span{color:inherit}
 .saved-amount-container,.saved-amount-text,.saved-amount-text span{color:#3f5a4a}
 .saved-amount-container{display:inline-block;margin-top:4px;font-size:14px;font-weight:600}
+
+/* Gaveta do carrinho: selo de desconto (o tema deixava o texto branco sem fundo) */
+.cart-item-discount-badge{display:inline-block;margin-right:6px;padding:2px 8px;border-radius:999px;background:#934522;color:#fff;font-size:12px;font-weight:600;line-height:1.4;vertical-align:middle}
+
+/* Página 404 no celular: o tema repõe o texto do botão e do título que o bloco da seção zera */
+#ns-section-main_404 .error-page-title{font-size:0!important}
+#ns-section-main_404 .breadcrumbs,#ns-section-main_404 .breadcrumbs a{font-size:0!important}
+#ns-section-main_404 .breadcrumbs a::after{font-size:15px!important}
+
+/* Busca sem resultado: esconde a frase de sugestões (o tema não lista produtos) e reduz o vazio */
+.products-grid-search-suggestion{font-size:17px;text-align:center;margin:0}
+.products-grid-search-suggestion+p{display:none}
+main:has(.products-grid-search-suggestion) .section-page-header{min-height:0!important;padding-bottom:0!important}
+main:has(.products-grid-search-suggestion) .page-header{padding-bottom:0!important}
+main:has(.products-grid-search-suggestion) .section-main-products-grid{padding-top:8px!important;padding-bottom:64px!important}
+main:has(.products-grid-search-suggestion) .page-header-title{font-size:28px;line-height:1.15}
+
+/* Aviso "Adicionado ao carrinho" no celular: nome menor, até 3 linhas */
+@media (max-width:767px){
+.notification-cart-container .notification-info-line:first-child{font-size:14px;line-height:1.25;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+}
