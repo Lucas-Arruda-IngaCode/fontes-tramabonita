@@ -109,3 +109,11 @@ main:has(.products-grid-search-suggestion) .page-header-title{font-size:28px;lin
 @media (max-width:767px){
 .notification-cart-container .notification-info-line:first-child{font-size:14px;line-height:1.25;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
 }
+@media (min-width:768px){
+#ns-section-featured-categories_1791478843106 .heading-column .heading-block{font-size:var(--h4)!important}
+}
+@media (max-width:767px){
+#ns-section-featured-categories_1791478843106 .heading-column{width:100%!important;max-width:none!important;margin:0 auto!important}
+#ns-section-featured-categories_1791478843106 .heading-column .heading-block{text-align:center}
+section#ns-section-featured-categories_1791478843106 .swiper-slide{width:calc((100vw - 48px)/2)!important}
+}
